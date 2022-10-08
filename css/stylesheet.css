@@ -1,5 +1,6 @@
 /* Carousel styling */
 #introCarousel,
+.carousel-inner,
 .carousel-item,
 
 .carousel-item.active {
