@@ -1,0 +1,36 @@
+/* Carousel styling */
+#introCarousel,
+.carousel-item,
+
+.carousel-item.active {
+    height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/delivery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/delivery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/delivery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    font-family: 'Crimson Pro', serif;
+}
+
+#introCarousel {
+    margin-top: -58.59px;
+}
