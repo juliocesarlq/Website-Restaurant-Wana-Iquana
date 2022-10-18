@@ -79,7 +79,7 @@
 
           <!-- Right Button-->
           <div class="d-flex align-items-center">
-            <button style = "border:1px solid #27AE60; color: #27AE60;" type="button" class="btn me-3">Order Pickup</button>
+            <button style = "border:1px solid #27AE60; color: #27AE60;" type="button" class="btn me-3" data-mdb-toggle="modal" data-mdb-target="#exampleModalCenter">Order Pickup</button>
           </div>
           <!-- Right Button -->
 
@@ -91,6 +91,23 @@
 
     </nav>
     <!-- Navbar -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    
+      <div class="modal-body text-center">
+        <p class="display-5">give us a call to order pickup</p>
+        <h5>Monday - Friday : 10AM to 9PM</h5>
+        <h5>Saturday - Sunday : 8AM to 9PM</h5>
+        <h4 class="display-3">(661)-297-9222</h4>
+        <h5>27750 McBean Pkwy</h5>
+        <h5>Santa Clarita, CA 91354</h5>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Carousel wrapper -->
     <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
@@ -160,12 +177,35 @@
     <!-- Carousel wrapper -->
 
     <!-- Reviews Section -->
-    <div class="container justify-content-center mt-3 text-center">
-      <h1>Reviews</h1>
-      <p>""Their burritos are great, they were quick, and workers are friendly and helpful. Even my super picky teen lives them."</p> 
-      <p>Shannon C.</p>
-    </div>
+    <div class="container mb-5">
+      <div class="row text-center mt-5 mb-5">
+        <h1 class="display-2">Reviews</h1>
+      </div>
 
+      <div class="row">
+        <div class="display-5 col-sm-12 col-lg-6 col-md-6 text-center">
+          <p>"Their burritos are great, they were quick, and workers are friendly and helpful. Even my super picky teen loves them."</p>
+          <p>- Shannon C.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-sm-3 text-center align-items-center justify-content-center">
+          <div class="row mt-5">
+            <i></i>
+          </div>
+          <div class="row mt-5">
+            <h3>Join the fan club - leave us a review.</h3>
+          </div>
+         
+          <div class="d-grid gap-2 col-6 mx-auto mt-3">
+            <button style= "background-color: #E00708;" type="button" class="btn btn-primary btn-lg"><i class="fab fa-yelp" style="margin-right: 6px;"></i>Yelp</button>
+            <button style= " background-color: #FF8001;" type="button" class="btn btn-primary btn-lg"> <i class="fas fa-utensils" style="margin-right: 6px;"></i>GrubHub</button>
+          </div>
+    
+        </div>
+ 
+
+      </div>
+    </div>
+    
     <!-- Review Section -->
 
       <!-- Background image -->
@@ -179,30 +219,35 @@
       <div class="text-white">
         <h1 class="mb-3 display-1">choose your destiny?</h1>
         <h3 class="mb-5">tacos, burritos, or healthy options, we got it all.</h3>
-        <a href="menu.html">
-        <img
-          src="taco.png"
-          style="height: 250px; margin-right: 50px;"
+        <div class="row">
+          <a href="menu.html" class="col-lg-4 col-md-4 col-sm-12">
+            <img
+              src="taco.png"
+              style="height: 250px; margin-right: 50px;"
+              class="img-fluid hover-shadow"
+              alt="Los Angeles Skyscrapers"
+            />
+          </a>
+          <a href="menu.html" class="col-lg-4 col-md-4 col-sm-12">
+            <img
+            src="burritos.png"
+            style="height: 250px; margin-right: 50px;"
+            class="img-fluid hover-shadow"
+            alt="Los Angeles Skyscrapers"
+          />
+          </a>
+          <a href="menu.html" class="col-lg-4 col-md-4 col-sm-12">
+          <img
+          src="salad.png"
+          style="height: 250px;"
           class="img-fluid hover-shadow"
           alt="Los Angeles Skyscrapers"
         />
-      </a>
-      <a href="menu.html">
-        <img
-        src="burritos.png"
-        style="height: 250px; margin-right: 50px;"
-        class="img-fluid hover-shadow"
-        alt="Los Angeles Skyscrapers"
-      />
-      </a>
-      <a href="menu.html">
-      <img
-      src="salad.png"
-      style="height: 250px;"
-      class="img-fluid hover-shadow"
-      alt="Los Angeles Skyscrapers"
-    />
-    </a>
+        </a>
+
+
+        </div>
+       
 
       </div>
     </div>
