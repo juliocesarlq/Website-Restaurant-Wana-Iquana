@@ -15,14 +15,14 @@
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/delivery.jpg');
+    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/tacos.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/delivery.jpg');
+    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/salad.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

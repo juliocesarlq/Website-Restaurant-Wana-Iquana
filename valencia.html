@@ -4,105 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Food Menu</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+
+    <title>Wana Iguana Fresh Baja Grill- Valencia, CA</title>
+
+    <style>
+      /* Default height for small devices */
+      #intro-example {
+        height: 1000px;
+      }
+  
+      /* Height for devices larger than 992px */
+      @media (min-width: 992px) {
+        #intro-example {
+          height: 600px;
+        }
+      }
+    </style>
+
+    <!-- Iquana icon -->
+    <link rel="icon" href="/img/iguana2.ico" type="image/x-icon" />
+
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
-    <!-- MDB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!-- Google Fonts -->
+    <!-- Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+    <!-- Crimison Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+
+    <!-- MD Bootstrap -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+
+     <!-- Local Stylesheet -->
+     <link rel="stylesheet" href="css/stylesheet.css" />
   </head>
   <body>
     <!-- Start your project here-->
 
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
-  <div class="container">
-    <!-- Navbar brand -->
-    <a class="navbar-brand me-2" href="home.html">
-      <img
-        src="iguana2.png"
-        height="16"
-        alt="Wana Iquana Logo"
-        loading="lazy"
-        style="margin-top: -1px;"
-      />
-      
-    </a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2000;">
 
-    <a class="navbar-brand" href="home.html">Wana Iguana</a>
-
+          <!-- Container wrapper -->
+          <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="index.html">
+              <img src="iguana2.png" height="16" alt="Wana Iquana Logo" loading="lazy" style="margin-top: -1px;"/>
+            </a>
     
+            <a class="navbar-brand" href="index.html">Wana Iguana</a>
+    
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+    
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="valencia.html">Valencia, CA</a>
+                </li>
+              </ul>
+              <!-- Left links -->
+    
+              <!-- Right Button-->
+              <div class="d-flex align-items-center">
+                <button style = "border:1px solid #27AE60; color: #27AE60;" type="button" class="btn me-3">Order Pickup</button>
+              </div>
+              <!-- Right Button -->
+    
+            </div>
+            <!-- Collapsible wrapper -->
+    
+            </div>
+            <!-- Container wrapper -->
+    
+        </nav>
+        <!-- Navbar -->
 
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarButtonsExample"
-      aria-controls="navbarButtonsExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="valencia.html">Valencia, CA</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+  <!--Background Image -->
+  <div class="bg-image" style=" background-image: url('wana-ig-out.jpeg'); height: 94vh;">
 
-      <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-primary me-3">
-          Order Pickup
-        </button>
-      </div>
-    </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-
-     <!--Background Image -->
-     <div class="bg-image" style=" background-image: url('burrito-pic.jpg'); height: 50vh;">
-
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-          <h1 class="text-white mb-0">Valencia, CA</h1>
-          <p class="text-white mt-3 mb-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-white mb-0 display-3">Santa Clarita, Ca</h1>
+        <p class="text-white mb-0 p-3 text-center display-5">the top mexican resturant in Santa Clarita, come and enjoy our currated meals</p>
+        <a style="cursor:auto" href="#visit-us-sec"><i class="fas fa-arrow-circle-down fa-3x mt-5" style="color: #fff"></i></a>
       </div>
         </div>
       </div>
-
-    
-
-
-
-<!-- Jumbotron -->
+      <!--Background Image-->
 
   <!-- Visit Us-->
-  <div class="mb-4 container-fluid">
+  <div class="mb-4 container-fluid" id="visit-us-sec">
 
     <div class="row text-center m-5">
       <h1>Visit Us</h1>
@@ -112,9 +116,9 @@
 
       <div class="col-lg-6">
         <h2>Hours</h2>
-        <p>Monday - Thursday:11:00 am - 11:00 pm</p>
-        <p>Friday - Saturday:11:00 am - 1:00 am</p>
-        <p>Sunday:11:00 am - 11:00 pm</p>
+        <p>Monday - Thursday: 11:00 am - 11:00 pm</p>
+        <p>Friday - Saturday: 11:00 am - 1:00 am</p>
+        <p>Sunday: 11:00 am - 11:00 pm</p>
 
       </div>
 
@@ -130,7 +134,7 @@
   <!-- Contact Us-->
   <div class="mb-4 container">
 
-    <div class="row text-center m-5">
+    <div class="row text-center">
       <h1>Contact Us</h1>
     </div>
 
@@ -147,15 +151,14 @@
           <input type="password" class="form-control" id="pwd" placeholder="Enter email" name="pswd">
         </div>
 
-        <div class="mb-3 mt-3">
-          <label for="comment">Comments:</label>
-          <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        <div class="mb-3">
+          <label for="pwd">Phone:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter phone number" name="pswd">
         </div>
 
-        <div class="form-check mb-3">
-          <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="remember"> Remember me
-          </label>
+        <div class="mb-3 mt-3">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="5" id="comment" placeholder="Did you enjoy your meal??" name="text"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -164,15 +167,99 @@
   </div>
 
   <!-- Map -->
-  <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d35818.719732048536!2d-4.25169!3d55.868392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488815562056ceeb%3A0x71e683b805ef511e!2sGlasgow%2C+Glasgow+City%2C+UK!5e0!3m2!1sen!2sus!4v1448625188752" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
 
-  <!-- Footer -->
-  <div class=" p-4 bg-dark text-white text-center">
-    <p>Footer</p>
-  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.266198110194!2d-118.55384668462648!3d34.44538998050074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c27d8c630c323d%3A0xc3a03c1ced5cefa7!2sWana%20Iguana!5e0!3m2!1sen!2sus!4v1666056885529!5m2!1sen!2sus" width="100%" height="450" style="border:0; display: block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social media:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">Wana Iguana</h6>
+          <p>
+            Tacos, burritos & other baja style mexican eats served in a family-friendly setting.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="menu.html" class="text-reset">Menu</a>
+          </p>
+          <p>
+            <a href="aboutus.html" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="valencia.html" class="text-reset">Valencia, CA</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Santa Clarita, CA 91354, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i>661-297-9222</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Wana Iguana - Fresh Baja Grill</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
  
 
  
