@@ -1,32 +1,30 @@
-/* Carousel styling */
-#introCarousel,
-.carousel-inner,
-.carousel-item,
 
-.carousel-item.active {
+.carousel .carousel-item {
     height: 100vh;
+    overflow:hidden;
+    background: #B2BEB5;
 }
 
-.carousel-item:nth-child(1) {
-    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/delivery.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  
+.carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 100%;
+      opacity: 0.8;
+      
 }
 
-.carousel-item:nth-child(2) {
-    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/tacos.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+
+.carousel-caption {
+    bottom: 30%;
 }
 
-.carousel-item:nth-child(3) {
-    background-image: url('https://juliocesarlq.github.io/wana-iquana-web/salad.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+
+
+
+
 
 body {
     font-family: 'Crimson Pro', serif;
@@ -36,3 +34,71 @@ body {
     margin-top: -58.59px;
 }
 
+
+.hidden-left {
+    opacity: 0; 
+    transition: all 1s;
+
+}
+
+.show-left {
+    opacity: 1;
+}
+
+.hidden-right {
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+.show-right {
+    opacity: 1;
+}
+
+.btn.btn-outline-primary:active {
+    border:1px solid #27AE60; 
+    color: #fff;
+    background-color: #27AE60;
+}
+
+.btn-outline-primary {
+    border:2px solid #27AE60; 
+    color: #27AE60;
+    font-family: 'Open Sans';
+    font-weight:900;
+
+}
+
+.btn-outline-primary:hover {
+    border:1px solid #27AE60; 
+    color: #fff;
+    background-color: #27AE60;
+}
+
+
+.btn-primary {
+    border:1px solid #27AE60; 
+    color: #fff;
+    background-color: #27AE60;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-size: 16px;
+
+}
+
+.btn.btn-primary:hover {
+    border:1px solid #27AE60; 
+    color: #fff;
+    background-color: #27AE60;
+    transform: scale(1.1);
+    box-shadow: -3px 8px 11px 2px #2D2D2D;
+
+
+
+}
+
+/*change the number below to scale to the appropriate size*/ 
+.thumbnail:hover { 
+    transform: scale(1.2); 
+    
+    }

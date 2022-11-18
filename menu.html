@@ -7,22 +7,8 @@
 
     <title>Wana Iguana Fresh Baja Grill- Valencia, CA</title>
 
-    <style>
-      /* Default height for small devices */
-      #intro-example {
-        height: 1000px;
-      }
-  
-      /* Height for devices larger than 992px */
-      @media (min-width: 992px) {
-        #intro-example {
-          height: 600px;
-        }
-      }
-    </style>
-
     <!-- Iquana icon -->
-    <link rel="icon" href="/img/iguana2.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/iguana.ico" type="image/x-icon" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
@@ -32,221 +18,258 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
     <!-- Crimison Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <!-- Fredoka One --->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
 
-    <!-- MD Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-     <!-- Local Stylesheet -->
-     <link rel="stylesheet" href="css/stylesheet.css" />
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+    <!-- JavaScript File -->
+    <script defer src="js/app.js"></script>
+
   </head>
+
   <body>
+
     <!-- Start your project here-->
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2000;">
+  <!-- Navbar -->
 
-      <!-- Container wrapper -->
-      <div class="container">
-        <!-- Navbar brand -->
-        <a class="navbar-brand me-2" href="index.html">
-          <img src="iguana2.png" height="16" alt="Wana Iquana Logo" loading="lazy" style="margin-top: -1px;"/>
-        </a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/iguana.png" style="width:40px;" alt="Wana Iquana Logo" loading="lazy" style="margin-top: -1px;"/>
+      </a>
 
-        <a class="navbar-brand" href="index.html">Wana Iguana</a>
+      <a class="navbar-brand" href="index.html">Wana Iguana | Baja Fresh Grill</a>
 
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="specials.html">Specials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="valencia.html">Valencia, CA</a>
+          </li>
+        </ul>
 
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="valencia.html">Valencia, CA</a>
-            </li>
-          </ul>
-          <!-- Left links -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="bi bi-bag-fill" style="margin-right: 10px;"></i>order now</button>
 
-          <!-- Right Button-->
-          <div class="d-flex align-items-center">
-            <button style = "border:1px solid #27AE60; color: #27AE60;" type="button" class="btn me-3">Order Pickup</button>
-          </div>
-          <!-- Right Button -->
+      </div>
+    </div>
+  </nav>
 
+  <!-- Navbar END -->
+
+   
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <p class="display-5">Our ordering system is under construction.</p>
+      </div>
+     
+      <div class="modal-body text-center">
+        <h1>for now we'd love to hear your voice.<i class="bi bi-phone-fill"></i></h1>
+        <h4 class="display-3">661-297-9222</h4>
+        <h5>Monday - Friday : 10AM to 9PM</h5>
+        <h5>Saturday - Sunday : 8AM to 9PM</h5>
+       
+      </div>
+
+      <div class="modal-footer">
+        <label for="exampleFormControlInput1" class="form-label text-left"> <h4>Be the first to now when you can order online.</h4></label>
+
+        <div class="input-group mb-3 ">
+          <input id="exampleFormControlInput1" class="form-control form-control-lg" type="email" placeholder="tacos@wanaiguana.com" aria-label=".form-control-lg example">
+          <button style=" box-shadow: none;"class="btn btn-primary" type="button" id="inputGroupFileAddon04">let me know</button>
         </div>
-        <!-- Collapsible wrapper -->
 
-        </div>
-        <!-- Container wrapper -->
+      </div>
+      
+    </div>
+  </div>
+</div>
 
-    </nav>
-    <!-- Navbar -->
+<!-- Modal END -->
 
-    <!--Background Image -->
-    <div class="bg-image" style=" background-image: url('specials.jpg'); height: 94vh;">
+<!-- Hero -->
 
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
-          <h1 class="text-white mb-0 display-3">Menu</h1>
-          <p class="text-white mb-0 p-3 text-center display-5">we offer a wide selection of fresh mexican food. From traditional mexican plates such as burritos and tacos to our own spin on healthy cuisine through our "health-mex" options</p>
-          <a style="cursor:auto" href="#ex1"><i class="fas fa-arrow-circle-down fa-3x mt-5" style="color: #fff"></i></a>
-        </div>
-          </div>
-        </div>
-    
+<div class="bg-image" style=" background-image: url('img/menu.jpg');  background-size: cover; height: 100vh;">
+  <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="text-white mb-0 display-3">Menu</h1>
+      <p class="text-white mb-0 p-3 text-center display-5">we offer a wide selection of fresh mexican food. From traditional mexican plates such as burritos and tacos to our own spin on healthy cuisine through our "health-mex" options.</p>
+      <a style="cursor:auto" href="#burrito-sec"><i class="fas fa-arrow-circle-down fa-3x mt-5" style="color: #fff"></i></a>
+    </div>
+  </div>
+</div>
 
-      <!-- Pills navs -->
-<ul class="nav nav-pills nav-justified ms-1 mb-3" id="ex1" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">Burrito</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">Original Tacos</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3" role="tab" aria-controls="ex1-pills-3" aria-selected="false">Favorites</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4" role="tab" aria-controls="ex1-pills-4" aria-selected="false">Combinations</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-5" data-mdb-toggle="pill" href="#ex1-pills-5" role="tab" aria-controls="ex1-pills-5" aria-selected="false">Kids Menu</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-6" data-mdb-toggle="pill" href="#ex1-pills-6" role="tab" aria-controls="ex1-pills-6" aria-selected="false">Health Mex</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-7" data-mdb-toggle="pill" href="#ex1-pills-7" role="tab" aria-controls="ex1-pills-7" aria-selected="false">Specials</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-8" data-mdb-toggle="pill" href="#ex1-pills-8" role="tab" aria-controls="ex1-pills-8" aria-selected="false">Breakfast</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-9" data-mdb-toggle="pill" href="#ex1-pills-9" role="tab" aria-controls="ex1-pills-9" aria-selected="false">Side Orders</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="ex1-tab-10" data-mdb-toggle="pill" href="#ex1-pills-10" role="tab" aria-controls="ex1-pills-10" aria-selected="false">Drinks</a>
-  </li>
-</ul>
+<!-- Hero END -->
 
-<!-- Pills navs -->
 
-<!-- Pills content -->
-<div class="tab-content" id="ex1-content">
-  <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-    <!-- Burritos-->
-  <div id="burrito-sec" class="container">
 
-    <div class="row text-center m-5">
-      <h1>Burritos</h1>
+    <!-- Pills -->
+
+    <!-- Hiding Content | Note: Can't figure out how to have two sticky navars.
+
+    <ul class="nav nav-pills nav-justified sticky-top ms-1 me-1">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Burritos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Original Tacos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Favorites</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Combinations</a>
+      </li>
+    </ul>
+
+  -->
+
+    <!-- Pills END -->
+
+<div id="burrito-sec" class="container hidden-left">
+
+  <div class="row text-center m-5">
+    <h1>Burritos</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <h2>Fajita Burrito</h2>
+      <p>Steak or chicken sautéed, peppers, onions, zucchini, and tomato sauce.</p>
+      <h4>$11.49</h4>
     </div>
 
-    <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <h2>Super Burrito</h2>
+        <p>Shredded beef, choice of beans, cheese, pico de gallo, guacamole, and sour cream.</p>
+        <h4>$10.59</h4>
+    </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Fajita Burrito</h2>
-        <p>Steak or chicken sautéed, peppers, onions, zucchini, and tomato sauce.</p>
-        <h4>$11.49</h4>
-      </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <h2>Burrito Grande</h2>
+        <p>Charbroiled steak or chicken with rice, choice of beans, cheese, and pico de gallo.</p>
+        <h4>$10.59</h4>
+    </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Super Burrito</h2>
-          <p>Shredded beef, choice of beans, cheese, pico de gallo, guacamole, and sour cream.</p>
-          <h4>$10.59</h4>
-      </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <h2>Bravo Burrito</h2>
+      <p>Charbroiled steak or chicken with choice of beans, fresh avocado slices, cheese, and our special hot bravo sauce.</p>
+      <h4>$12.19</h4>
+    </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Burrito Grande</h2>
-          <p>Charbroiled steak or chicken with rice, choice of beans, cheese, and pico de gallo.</p>
-          <h4>$10.59</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Bravo Burrito</h2>
-        <p>Charbroiled steak or chicken with choice of beans, fresh avocado slices, cheese, and our special hot bravo sauce.</p>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <h2>Grilled Mahi Burrito</h2>
+        <p>Shredded beef, choice of beans, cheese, pico de gallo, guacamole, and sour cream.</p>
         <h4>$12.19</h4>
-      </div>
+    </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Grilled Mahi Burrito</h2>
-          <p>Shredded beef, choice of beans, cheese, pico de gallo, guacamole, and sour cream.</p>
-          <h4>$12.19</h4>
-      </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <h2>Classic Burrito</h2>
+        <p>CRice, cheese and choice of beans.</p>
+        <h4>$6.49</h4>
+    </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Classic Burrito</h2>
-          <p>CRice, cheese and choice of beans.</p>
-          <h4>$6.49</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Burrito Del Mar</h2>
-        <p>Grilled shrimp with rice, tomatoes, cheese, and fresh slices of avocado.</p>
-        <h4>$12.19</h4>
-      </div>
-
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <h2>Burrito Del Mar</h2>
+      <p>Grilled shrimp with rice, tomatoes, cheese, and fresh slices of avocado.</p>
+      <h4>$12.19</h4>
     </div>
 
   </div>
 
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+</div>
+
+
     <!-- Tacos -->
-  <div id="tacos-sec" class="container">
+    <div id="tacos-sec" class="container hidden-right">
 
-    <div class="row text-center m-5">
-      <h1>Original Tacos</h1>
+      <div class="row text-center m-5">
+        <h1>Original Tacos</h1>
+      </div>
+  
+      <div class="row">
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>Taco Suave</h2>
+          <p>Soft corn tortilla with choice of charbroiled steak or chicken with lettuce, cheese, and pico de gallo.</p>
+          <h4>$4.25</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h2>Taco Duro</h2>
+            <p>Hard shell corn tortilla with choice of shredded beef or chicken with cheese, lettuce, and our special tomato sauce.</p>
+            <h4>$4.25</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h2>Taco Bravo</h2>
+            <p>Choice of steak or chicken, beans, fresh avocado, and our special bravo sauce.</p>
+            <h4>$4.25</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>Taco Del Mar</h2>
+          <p>Choice of mahi-mahi or shrimp with cabbage, pico de gallo, and white sauce.</p>
+          <h4>$4.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h2>Taco Supreme</h2>
+            <p>Large crispy flour tortilla with choice of beef or chicken filled with lettuce, cheese sour cream, and fresh guacamole.</p>
+            <h4>$6.39</h4>
+        </div>
+  
+      </div>
+  
     </div>
 
-    <div class="row">
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Taco Suave</h2>
-        <p>Soft corn tortilla with choice of charbroiled steak or chicken with lettuce, cheese, and pico de gallo.</p>
-        <h4>$4.25</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Taco Duro</h2>
-          <p>Hard shell corn tortilla with choice of shredded beef or chicken with cheese, lettuce, and our special tomato sauce.</p>
-          <h4>$4.25</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Taco Bravo</h2>
-          <p>Choice of steak or chicken, beans, fresh avocado, and our special bravo sauce.</p>
-          <h4>$4.25</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Taco Del Mar</h2>
-        <p>Choice of mahi-mahi or shrimp with cabbage, pico de gallo, and white sauce.</p>
-        <h4>$4.99</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>Taco Supreme</h2>
-          <p>Large crispy flour tortilla with choice of beef or chicken filled with lettuce, cheese sour cream, and fresh guacamole.</p>
-          <h4>$6.39</h4>
-      </div>
-
-    </div>
-
-  </div>
-
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-      <!-- Favorites -->
-  <div id="favorites-sec" class="container">
+         <!-- Favorites -->
+  <div id="favorites-sec" class="container hidden-left">
 
     <div class="row text-center m-5">
       <h1>Favorites</h1>
@@ -317,74 +340,70 @@
     </div>
     
   </div>
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
-     
-  <!-- Combinations -->
-  <div id="combo-sec" class="container">
 
-    <div class="row text-center m-5">
-      <h1>Combinations</h1>
-    </div>
+    <!-- Combinations -->
+    <div id="combo-sec" class="container hidden-right">
 
-    <div class="row">
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>#1 One Taco</h2>
-        <p>Soft corn tortilla with choice of charbroiled steak or chicken with lettuce, cheese, and pico de gallo.</p>
-        <h4>$6.99</h4>
+      <div class="row text-center m-5">
+        <h1>Combinations</h1>
       </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>#2 Two Tacos</h2>
-          <p>Hard shell corn tortilla with choice of shredded beef or chicken with cheese, lettuce, and our special tomato sauce.</p>
-          <h4>$10.99</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-          <h2>#3 One Enchilada</h2>
-          <p>Corn tortilla rolled and filled with cheese. Comes with side of rice and beans.</p>
+  
+      <div class="row">
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>#1 One Taco</h2>
+          <p>Soft corn tortilla with choice of charbroiled steak or chicken with lettuce, cheese, and pico de gallo.</p>
           <h4>$6.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h2>#2 Two Tacos</h2>
+            <p>Hard shell corn tortilla with choice of shredded beef or chicken with cheese, lettuce, and our special tomato sauce.</p>
+            <h4>$10.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h2>#3 One Enchilada</h2>
+            <p>Corn tortilla rolled and filled with cheese. Comes with side of rice and beans.</p>
+            <h4>$6.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>#4 Two Enchiladas</h2>
+          <p>Two corn tortillas rolled and filled with cheese. Comes with side of rice and beans.</p>
+          <h4>$10.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>#5 Burrito</h2>
+          <p>Choice of the Super Burrito or Grande Burrito. Comes with side of rice and beans.</p>
+          <h4>$12.49</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>#6 Taco & Enchilada</h2>
+          <p>Choice of a soft taco or crispy taco and a cheese enchilada. Comes with side of rice and beans.</p>
+          <h4>$12.49</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>#7 Burrito & Taco</h2>
+          <p>Choice of the Super burrito or Grande burrito, with a choice of the soft taco or crispy taco. Comes with side of rice and beans.</p>
+          <h4>$15.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>#8 Taquitos</h2>
+          <p>Three corn taquitos of shredded beef or shredded chicken with side of rice and beans.</p>
+          <h4>$9.99</h4>
+        </div>
+  
       </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>#4 Two Enchiladas</h2>
-        <p>Two corn tortillas rolled and filled with cheese. Comes with side of rice and beans.</p>
-        <h4>$10.99</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>#5 Burrito</h2>
-        <p>Choice of the Super Burrito or Grande Burrito. Comes with side of rice and beans.</p>
-        <h4>$12.49</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>#6 Taco & Enchilada</h2>
-        <p>Choice of a soft taco or crispy taco and a cheese enchilada. Comes with side of rice and beans.</p>
-        <h4>$12.49</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>#7 Burrito & Taco</h2>
-        <p>Choice of the Super burrito or Grande burrito, with a choice of the soft taco or crispy taco. Comes with side of rice and beans.</p>
-        <h4>$15.99</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>#8 Taquitos</h2>
-        <p>Three corn taquitos of shredded beef or shredded chicken with side of rice and beans.</p>
-        <h4>$9.99</h4>
-      </div>
-
+  
     </div>
 
-  </div>
-
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-5" role="tabpanel" aria-labelledby="ex1-tab-5">
-    <!-- Kids Menu -->
-  <div id="kids-sec" class="container">
+     <!-- Kids Menu -->
+  <div id="kids-sec" class="container hidden-left">
 
     <div class="row text-center m-5">
       <h1>Kids Menu</h1>
@@ -419,11 +438,9 @@
     </div>
 
   </div>
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-6" role="tabpanel" aria-labelledby="ex1-tab-6">
-      
-    <!-- Health Mex -->
-  <div id="health-sec" class="container">
+
+  <!-- Health Mex -->
+  <div id="health-sec" class="container hidden-right">
 
     <div class="row text-center m-5">
       <h1>Health Mex</h1>
@@ -458,11 +475,9 @@
     </div>
 
   </div>
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-7" role="tabpanel" aria-labelledby="ex1-tab-7">
-    
+
   <!-- Specials -->
-  <div id="specials-sec" class="container">
+  <div id="specials-sec" class="container hidden-left">
 
     <div class="row text-center m-5">
       <h1>Specials</h1>
@@ -521,11 +536,9 @@
     </div>
 
   </div>
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-8" role="tabpanel" aria-labelledby="ex1-tab-8">
-     
-    <!-- Breakfast -->
-  <div id="breakfast-sec" class="container">
+
+  <!-- Breakfast -->
+  <div id="breakfast-sec" class="container hidden-right">
 
     <div class="row text-center m-5">
       <h1>Breakfast</h1>
@@ -572,11 +585,9 @@
     </div>
 
   </div>
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-9" role="tabpanel" aria-labelledby="ex1-tab-9">
-     
-    <!-- Side Orders -->
-  <div id="side-sec"class="container">
+
+   <!-- Side Orders -->
+   <div id="side-sec"class="container hidden-left">
 
     <div class="row text-center m-5">
       <h1>Side Orders</h1>
@@ -647,49 +658,44 @@
     </div>
 
   </div>
-  </div>
-  <div class="tab-pane fade" id="ex1-pills-10" role="tabpanel" aria-labelledby="ex1-tab-10">
-    
-    <!-- Drinks -->
-  <div id="drinks-sec" class="container">
 
-    <div class="row text-center m-5">
-      <h1>Drinks</h1>
+     <!-- Drinks -->
+     <div id="drinks-sec" class="container">
+
+      <div class="row text-center m-5">
+        <h1>Drinks</h1>
+      </div>
+  
+      <div class="row">
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>Fountain Drinks</h2>
+          <p>Pepsi, Diet Pepsi, Pink Lemonade, Brisk Raspberry Iced Tea, Crush Orange Soda, Dr.Pepper, Sierra Mist, Horchata, Jamaica, Orange Bang Juice, Unsweetened Iced Tea.</p>
+          <h4>$2.69</h4>
+          
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>Bottles Juices</h2>
+          <p>Gatorade Cool Blue, Gatorade Fruit Punch, Gatorade Lemon-Lime, Gatorade Orange, Cranberry Juice, Apple Juice, Orange Juice, Lipton Green Tea, Lipton Diet Green Tea.</p>
+          <h4>$2.99</h4>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h2>Bottled Water</h2>
+          <p></p>
+          <h4>$1.99</h4>
+        </div>
+      </div>
     </div>
-
-    <div class="row">
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Fountain Drinks</h2>
-        <p>Pepsi, Diet Pepsi, Pink Lemonade, Brisk Raspberry Iced Tea, Crush Orange Soda, Dr.Pepper, Sierra Mist, Horchata, Jamaica, Orange Bang Juice, Unsweetened Iced Tea.</p>
-        <h4>$2.69</h4>
-        
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Bottles Juices</h2>
-        <p>Gatorade Cool Blue, Gatorade Fruit Punch, Gatorade Lemon-Lime, Gatorade Orange, Cranberry Juice, Apple Juice, Orange Juice, Lipton Green Tea, Lipton Diet Green Tea.</p>
-        <h4>$2.99</h4>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <h2>Bottled Water</h2>
-        <p></p>
-        <h4>$1.99</h4>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-<!-- Pills content -->
 
 <!-- Footer -->
-<footer class="mt-3 text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social media:</span>
+      <span>Connect with us to recieve special deals and offers:</span>
     </div>
     <!-- Left -->
 
@@ -720,9 +726,9 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">Wana Iguana</h6>
+          <h6 class="text-uppercase fw-bold mb-2">Wana Iguana</h6>
           <p>
-            Tacos, burritos & other baja style mexican eats served in a family-friendly setting.
+            We are a family owned restaurant that has been in business since 1997. Offering a wide variety of Mexican food that is always cooked fresh! NO lard, NO preservatives, NO msg, NO microwaves, and NO freezers! We offer dine in or pick up orders. Come give us a try!
           </p>
         </div>
         <!-- Grid column -->
@@ -732,11 +738,14 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="text-uppercase fw-bold mb-2">
             Useful links
           </h6>
           <p>
             <a href="menu.html" class="text-reset">Menu</a>
+          </p>
+          <p>
+            <a href="menu.html" class="text-reset">Specials</a>
           </p>
           <p>
             <a href="aboutus.html" class="text-reset">About Us</a>
@@ -754,7 +763,7 @@
           <p><i class="fas fa-home me-3"></i> Santa Clarita, CA 91354, US</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            info@example.com
+            office@wanaiguana.com
           </p>
           <p><i class="fas fa-phone me-3"></i>661-297-9222</p>
         </div>
@@ -768,28 +777,22 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2022 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Wana Iguana - Fresh Baja Grill</a>
+    <a class="text-reset fw-bold" href="index.html">Wana Iguana - Fresh Baja Grill</a>
+    - Made with code <i class="bi bi-braces"></i> care <i class="bi bi-balloon-heart-fill"></i> & caffeine <i class="bi bi-cup-hot-fill"></i>  by <a class="text-reset fw-bold" href="https://mdbootstrap.com/">June</a>  &  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">July</a>
   </div>
   <!-- Copyright -->
 </footer>
-<!-- Footer -->
 
+<!-- Footer END -->
 
+<!-- Scripts -->
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
  
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
 
- 
-
-
- 
-
- 
-
-  
-    <!-- End your project here-->
-
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+<!-- Scripts END -->
   </body>
 </html>
