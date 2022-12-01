@@ -46,10 +46,6 @@ Website for resturant located in Valencia, CA
 
 ![BART Login](/github-pics/wana-pic-8.png?raw=true "Specials Page")
 
-### Menu Burritos Section
-
-![BART Login](/github-pics/wana-pic-5.png?raw=true "Menu Burritos Section")
-
 ### Contact Us Form 
 
 ![BART Login](/github-pics/wana-pic-11.png?raw=true "Contact Us Form")
