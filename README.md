@@ -4,7 +4,9 @@ Website for resturant located in Valencia, CA
 
 ## Initial Release - Wana Iguana Web
 
-### Home Page Carousel 
+### Desktop Website
+
+#### Home Page Carasouel
 
 ![BART Login](/github-pics/wana-pic-1.png?raw=true "Home Page Carasouel")
 
