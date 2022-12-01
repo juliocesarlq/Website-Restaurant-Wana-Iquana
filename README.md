@@ -4,4 +4,8 @@ Website for resturant located in Valencia, CA
 
 ## Technology Utilized
 
-javascript, html5, css, bootstrap 5
+* JavaScript
+* PHP
+* HTML5
+* CSS
+* BootStrap 5
