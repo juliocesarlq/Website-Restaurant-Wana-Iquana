@@ -10,23 +10,23 @@ Website for resturant located in Valencia, CA
 
 ### Home Page Carasouel - 2
 
-![BART Login](/github-pics/wana-pic-2.png?raw=true "Home Page Carasouel")
+![BART Login](/github-pics/wana-pic-2.png?raw=true "Home Page Carasouel 2")
 
 ### Home Page Menu Section
 
-![BART Login](/github-pics/wana-pic-3.png?raw=true "Home Page Carasouel")
+![BART Login](/github-pics/wana-pic-3.png?raw=true "Home Page Menu Section")
 
 ### Order System Coming Soon View
 
-![BART Login](/github-pics/wana-pic-4.png?raw=true "Home Page Carasouel")
+![BART Login](/github-pics/wana-pic-4.png?raw=true "Order System Coming Soon View")
 
 ### Menu Burritos Section
 
-![BART Login](/github-pics/wana-pic-5.png?raw=true "Home Page Carasouel")
+![BART Login](/github-pics/wana-pic-5.png?raw=true "Menu Burritos Section")
 
 ### Contact Us Form 
 
-![BART Login](/github-pics/wana-pic-6.png?raw=true "Home Page Carasouel")
+![BART Login](/github-pics/wana-pic-6.png?raw=true "Contact Us Form")
 
 
 
