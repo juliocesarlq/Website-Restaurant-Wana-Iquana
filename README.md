@@ -2,6 +2,9 @@
 
 Website for resturant located in Valencia, CA
 
+![BART Login](/github-pics/wana-pic-1.png?raw=true "BART OCC Login")
+
+
 ## Technology Utilized
 
 * JavaScript
