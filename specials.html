@@ -132,7 +132,7 @@
   fetch('https://api.sheetbest.com/sheets/3e50bf38-89e1-444a-94aa-e712c4ae5637')
     .then(res => res.json())
     .then(data => {
-      const container = document.getElementById('specials-container');
+      const container = document.getElementById('specials-content');
       container.innerHTML = ''; // Clear existing content
 
       data.forEach(item => {
