@@ -124,41 +124,38 @@
 
 <!-- Specials Section -->
 
-<!-- Monday-->
-
-<div id="specials-content" class="container">
-
-  <div class="row m-5">
-    <h1>Monday - Street Tacos with a free drink</h1>
-    <h3>3 street-style tacos and your choice of beverage. Protein options include steak, chicken, and pork.</h3>
-    <h4>$7.99</h4>
-  </div>
-
-  <div class="row m-5">
-      <h1>Tuesday - Taco Tuesday (the best day of the week)</h1>
-      <h3>Choice of Suave, Duro, or Bravo.</h3>
-      <h4>$3.50 per taco</h4>
-  </div>
-
-  <div class="row m-5">
-    <h1>Wednesday - Salad Special</h1>
-    <h3>Choice of Mexican Chopped Salad, Grilled Veggie, or Chicken Salad.</h3>
-    <h4>$9.50</h4>
-  </div>
-
-  <div class="row m-5">
-    <h1>Thursday - Quesadilla</h1>
-    <h3>Choice of Quesadilla Deluxe or Quesadilla Supreme. Add chicken or steak at no extra cost!</h3>
-    <h4>$8.29</h4>
-  </div>
-
-  <div class="row m-5">
-    <h1>Friday - Shrimp Fajitas</h1>
-    <h3>Get weekend ready with friday fajitas!</h3>
-    <h4>$14.99</h4>
-  </div>
-
+<div id="specials-container">
+  <!-- Daily specials will load here -->
 </div>
+
+<script>
+  fetch('https://api.sheetbest.com/sheets/3e50bf38-89e1-444a-94aa-e712c4ae5637')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('specials-container');
+      container.innerHTML = ''; // Clear existing content
+
+      data.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'row m-5';
+
+        const h1 = document.createElement('h1');
+        h1.textContent = item.title;
+
+        const h3 = document.createElement('h3');
+        h3.textContent = item.description;
+
+        const h4 = document.createElement('h4');
+        h4.textContent = item.price;
+
+        div.appendChild(h1);
+        div.appendChild(h3);
+        div.appendChild(h4);
+
+        container.appendChild(div);
+      });
+    });
+</script>
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted mt-5">
